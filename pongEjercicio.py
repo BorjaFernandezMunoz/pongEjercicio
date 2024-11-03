@@ -26,6 +26,7 @@ class Pintable(pygame.Rect):
 
 
 class Pelota(Pintable): 
+
     tam_pelota = 10
 
     def __init__(self):
@@ -90,6 +91,7 @@ class Jugador(Pintable):
 class Mensaje:
 
 # Creo mensaje como clase para aprovechar el método "preparar_tipografia"; en un futuro podría ser útil (si quisiera, por ejemplo, crear un menú de pausa)
+
     def preparar_tipografia(self, tam_letra):
         tipos = pygame.font.get_fonts()
         letra = 'comicsansms'
